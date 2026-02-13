@@ -74,11 +74,11 @@ begin
 	-- PORT MAPS --------------------
    ripple_adder_uut: ripple_adder
    port map (
-    A => w_A,
-    B => w_B,
-    Cin => w_Cin,
-    S => w_S,
-    Cout => w_Cout
+    A    => sw(4 downto 1),
+    B    => sw(15 downto 12),
+    Cin  => sw(0),
+    S    => led(3 downto 0),
+    Cout => led(15)
    
    );
 	---------------------------------
