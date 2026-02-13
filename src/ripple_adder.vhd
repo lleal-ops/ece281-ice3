@@ -59,7 +59,7 @@ full_adder_0: full_adder
         B     => B(3),
         Cin   => w_carry(2),
         S     => S(3),
-        Cout  => w_carry(3)
+        Cout  => Cout
     );
 
 
